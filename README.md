@@ -1,6 +1,12 @@
 # helloworld
 A simple but complete recipe for yocto build environment
 
-Just copy the folder into any meta layers and run bitbake hellworld.
-
-devtool add --autorev helloworld "https://github.com/joseinweb/helloworld.git;branch=main" && devtool build helloworld
+You can use this in two ways 
+1. checkout the whole repo into any meta layer (say in recipes-extended directory) and run
+   ```
+   bitbake helloworld
+   ```
+2. Checkout using devtool 
+```
+devtool add --autorev helloworld https://github.com/joseinweb/helloworld.git --src-subdir src --srcbranch main && devtool build helloworld
+```
