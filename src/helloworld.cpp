@@ -1,7 +1,8 @@
-#include <cstdio>
+#include <iostream>
+
 
 int main(int c, char * v[])
 {
-	printf("Hello World \n");
+	std::cout<<"Hello World from Yocto!"<<std::endl;
 	return 0;
 }
